@@ -1,3 +1,5 @@
+CREATE TABLE SALES_FEATURES AS 
+
 WITH foo AS (
 select *
     , CASE 
@@ -55,16 +57,17 @@ left join
 	, SUM(CASE WHEN b.date BETWEEN date(a.date, '-3 months') AND a.date THEN b.Total_Amount ELSE 0 END) AS spend_3m
 	, SUM(CASE WHEN b.date BETWEEN date(a.date, '-12 months') AND a.date THEN b.Total_Amount ELSE 0 END) AS spend_12m
 	-- for electronics
-	, SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Electronics' THEN b.Total_Amount ELSE 0 END) AS spend_3m_electronics
-	, SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Beauty' THEN b.Total_Amount ELSE 0 END) AS spend_3m_beauty
-	, SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Clothing' THEN b.Total_Amount ELSE 0 END) AS spend_3m_clothing
+	-- using this would cause data leakage, because we are trying to predict the spend on electronics
+	-- , SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Electronics' THEN b.Total_Amount ELSE 0 END) AS spend_3m_electronics
+	-- , SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Beauty' THEN b.Total_Amount ELSE 0 END) AS spend_3m_beauty
+	-- , SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Clothing' THEN b.Total_Amount ELSE 0 END) AS spend_3m_clothing
 	-- FEATURE FOR # OF UNITS
 	, SUM(CASE WHEN b.date BETWEEN date(a.date, '-3 months') AND a.date THEN b.QUANTITY ELSE 0 END) AS QTY_3m
 	, SUM(CASE WHEN b.date BETWEEN date(a.date, '-12 months') AND a.date THEN b.QUANTITY ELSE 0 END) AS QTY_12m
 	-- FEAURES FOR QTY (SPLIT BY PRODUCT CATEGORY)
-	, SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Electronics' THEN b.QUANTITY ELSE 0 END) AS QTY_3m_electronics
-	, SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Beauty' THEN b.QUANTITY ELSE 0 END) AS QTY_3m_beauty
-	, SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Clothing' THEN b.QUANTITY ELSE 0 END) AS QTY_3m_clothing
+	-- , SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Electronics' THEN b.QUANTITY ELSE 0 END) AS QTY_3m_electronics
+	-- , SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Beauty' THEN b.QUANTITY ELSE 0 END) AS QTY_3m_beauty
+	-- , SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Clothing' THEN b.QUANTITY ELSE 0 END) AS QTY_3m_clothing
 
 
 FROM 
@@ -115,12 +118,12 @@ SELECT -- date,
 		, QTY_3m
 		, spend_12m
 		, QTY_12m
-		, spend_3m_electronics
-		, QTY_3m_electronics
-		, spend_3m_beauty
-		, QTY_3m_beauty
-		, spend_3m_clothing
-		, QTY_3m_beauty
+		--, spend_3m_electronics
+		--, QTY_3m_electronics
+		--, spend_3m_beauty
+		--, QTY_3m_beauty
+		--, spend_3m_clothing
+		--, QTY_3m_beauty
     , CASE WHEN age < 20 THEN 1 ELSE 0 END AS dummy_under_20,
     CASE WHEN age BETWEEN 20 AND 29 THEN 1 ELSE 0 END AS dummy_20_29,
     CASE WHEN age BETWEEN 30 AND 39 THEN 1 ELSE 0 END AS dummy_30_39,
