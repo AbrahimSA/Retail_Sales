@@ -3,7 +3,7 @@
 
 # Project Overview:
 
-As part of the Data Science Certificate program at the University of Toronto, our machine learning capstone project involved applying our theoretical and technical skillset to a real world scenario. The dataset we chose was a "Retail Sales" dataset that can be used to predict the product category a customer is likely to purchase based on factors such as their age, gender/sex, and previous purchase history. This project aims to apply exploratory data analysis, advanced analytics, and machine learning techniques to gain actionable insights that can help businesses optimize product inventory, and enhance customer engagement. 
+As part of the Data Science Certificate program at the University of Toronto our machine learning capstone project involved applying our theoretical and technical skillset to a real world scenario. The dataset we chose was a Retail Sales dataset that can be used to predict the product category a customer is likely to purchase based on factors such as their age, gender/sex, and previous purchase history. This project aims to apply exploratory data analysis, advanced analytics, and machine learning techniques to gain actionable insights that can help businesses optimize product inventory, and enhance customer engagement. 
 
 # Dataset:
 
@@ -37,5 +37,45 @@ This project uses the following Python libraries
 - matplotlib : For creating graphs and plots.
 - seaborn : For improving visualization of matplotlib plots.
 - sklearn : For machine learning models.
+
+
+# Feature engineering
+- We begin with a transaction dataset where each record represents a customer's transaction. Customer-level features are engineered for model training, as defined in feature_eng.sql
+
+### Customer-Level Features
+
+- **Customer_ID:** Unique customer identifier.
+- **age_range:** Age binned into groups (<20, 20–29, 30–39, 40–49, 50–59, ≥60) and dummy-coded.
+- **HolidayName:** Last holiday shopped, encoded as an indicator.
+- **Month_name:** Transaction month to capture seasonality.
+- **spend_3m:** Total spend in the last 3 months.
+- **QTY_3m:** Total units purchased in the last 3 months.
+- **spend_12m:** Total spend in the last 12 months.
+- **QTY_12m:** Total units purchased in the last 12 months.
+- **gender_dummy:** Gender encoded as a dummy variable.
+
+### External Data (Toronto)
+
+- **Max_Temp:** Daily maximum temperature.
+- **Min_Temp:** Daily minimum temperature.
+- **Mean_Temp:** Daily average temperature.
+- **Total_Precip_mm:** Daily precipitation (mm).
+
+### Target Variable
+
+- **Product_Category**
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
