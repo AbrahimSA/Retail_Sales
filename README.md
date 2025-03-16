@@ -3,11 +3,11 @@
 
 # Project Overview:
 
-As part of the Data Science Certificate program at the University of Toronto, our machine learning capstone project involved applying our theoretical and technical skillset to a real world scenario. The dataset we chose was a "Retail Sales" dataset that can be used to predict the product category a customer is likely to purchase based on factors such as their age, gender/sex, and previous purchase history. This project aims to apply exploratory data analysis, advanced analytics, and machine learning techniques to gain actionable insights that can help businesses optimize product inventory, and enhance customer engagement. 
+As part of the Data Science Certificate program at the University of Toronto our machine learning capstone project involved applying our theoretical and technical skillset to a real world scenario. The dataset we chose was a Retail Sales dataset that can be used to predict the product category a customer is likely to purchase based on factors such as their age, gender/sex, and previous purchase history. This project aims to apply exploratory data analysis, advanced analytics, and machine learning techniques to gain actionable insights that can help businesses optimize product inventory, and enhance customer engagement. 
 
 # Dataset:
 
-Our retail sales dataset from Kaggle (link to dataset) consists of attributes that drive retail operations and customer interactions that can be oberved in the real world. The dataset consists of essential attributes such as Transaction ID, Date, Customer ID, Gender, Age, Product Category, Quantity, Price per Unit, and Total Amount. These attributes allow for an in-depth exploration of sales trends, product preferences, and puchasing behaviour. The analysis and insights gained from this project can be used to personalize products to each customer in the future. Based on our insights, this project demonstrates our team work and potential to contribute to the data science or machine learning field.
+Our retail sales dataset from Kaggle ([Retail Sales Dataset](https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset)) consists of attributes that drive retail operations and customer interactions that can be oberved in the real world. The dataset consists of essential attributes such as Transaction ID, Date, Customer ID, Gender, Age, Product Category, Quantity, Price per Unit, and Total Amount. These attributes allow for an in-depth exploration of sales trends, product preferences, and puchasing behaviour. The analysis and insights gained from this project can be used to personalize products to each customer in the future. Based on our insights, this project demonstrates our team work and potential to contribute to the data science or machine learning field.
 
 # Members
 
@@ -126,3 +126,33 @@ Our retail sales dataset consists of following attributes:
 - The dataset does not provide insights into customer purchase frequency.
 - It is not possible to analyze monthly or quarterly purchase patterns for specific customers.
 - The dataset includes only product categories without detailed product information. For example, within the electronics category, it is unclear whether customers are purchasing a TV or a monitor, or which TV brand is the most popular.
+
+
+# Feature engineering
+- We begin with a transaction dataset where each record represents a customer's transaction. Customer-level features are engineered for model training, as defined in feature_eng.sql
+
+### Customer-Level Features
+
+- **Customer_ID:** Unique customer identifier.
+- **age_range:** Age binned into groups (<20, 20–29, 30–39, 40–49, 50–59, ≥60) and dummy-coded.
+- **HolidayName:** Last holiday shopped, encoded as an indicator.
+- **Month_name:** Transaction month to capture seasonality.
+- **spend_3m:** Total spend in the last 3 months.
+- **QTY_3m:** Total units purchased in the last 3 months.
+- **spend_12m:** Total spend in the last 12 months.
+- **QTY_12m:** Total units purchased in the last 12 months.
+- **gender_dummy:** Gender encoded as a dummy variable.
+
+### External Data (Toronto)
+
+- **Max_Temp:** Daily maximum temperature.
+- **Min_Temp:** Daily minimum temperature.
+- **Mean_Temp:** Daily average temperature.
+- **Total_Precip_mm:** Daily precipitation (mm).
+
+### Target Variable
+
+- **Product_Category**
+
+
+
