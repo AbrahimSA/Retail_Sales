@@ -29,16 +29,31 @@ Retail businesses often struggle to identify which products are most likely to b
 - **Suboptimal inventory management** Stocking products without understanding demand from different customer groups.
 - **Missed revenue opportunities** Lack of tailored cross-sell and up-sell strategies.
 
-This project focusses on the following objectives:
-- Predict the likelihood of a customer purchasing specific product categories based on their age, gender/sex, previous purchase history.
-- Enable personalized recommendations
+This project focuses on the following objectives:
+- Predict the likelihood of a customer purchasing specific product categories based on their age, gender/sex, previous purchase history
+- Enable personalized recommendation of the next product category
 
 # Project Plan:
 
 To explore the retail sales dataset, we will focus on the following objectives:
-1. Exploratory Data Analysis (EDA): Understanding sales trends, customer purchasing behaviour, product preferences, and influential factors
-2. Customer Segmentation: Applying clustering algorithms (i.e., K-Means or KNN) to identify customer groups based on purchasing behaviour
-3. Product Recommendation System: Utilizing deep learning to recommend products
+1. **Data Preparation:** 
+    - Data cleaning, determining outliers and missing values, transforming variables
+2. **Exploratory Data Analysis (EDA):**
+    - Understand sales trends, customer purchasing behaviour, product preferences, and influential factors
+3. **Feature Engineering:** 
+    - Create and derive new features, perform one-hot encoding or create dummy variables
+4. **Customer Segmentation:** 
+    - Apply clustering algorithms (i.e., K-Means or KNN) to identify customer groups based on purchasing behaviour
+5. **Model development and Evaluation:** 
+    - Build several models to predict what product category a customer will purchase and determine the best-fitting model based on evaluation metrics.
+    
+        Models include:
+        - **XGBoost Model:** a decision tree classifier
+        - **Feed Forward Neural Network:** deep learning model
+        - **Recommendation System:** another deep learning model
+6. **Business Insights:** 
+    - Summary findings of the data analysis, models, and results will help the retail store owner manage product inventory by knowing what products customers are buying and thus, will help increase customer satisfaction.
+
 
 # Exploratory Data Analysis:
 Our retail sales dataset consists of following attributes: 
@@ -155,4 +170,7 @@ Our retail sales dataset consists of following attributes:
 - **Product_Category**
 
 
+# Business Insights
+
+This will be the summary of findings at the conclusion of the team project based on the EDA and model results.
 
