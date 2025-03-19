@@ -68,8 +68,6 @@ left join
 	-- , SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Electronics' THEN b.QUANTITY ELSE 0 END) AS QTY_3m_electronics
 	-- , SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Beauty' THEN b.QUANTITY ELSE 0 END) AS QTY_3m_beauty
 	-- , SUM(CASE WHEN (b.date BETWEEN date(a.date, '-3 months') AND a.date) and a.Product_Category = 'Clothing' THEN b.QUANTITY ELSE 0 END) AS QTY_3m_clothing
-
-
 FROM 
     SALES a
 LEFT JOIN 
