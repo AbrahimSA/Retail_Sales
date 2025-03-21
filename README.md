@@ -292,6 +292,6 @@ The high-spending group is smaller compared to the low-spending groups. Within t
 - Nipun Puri
     - Data preparation, XGBoost results, and ReadMe file
 - Sreesha Pannikode Puthanveedu
-    - Segmentation, Feed Forward Neural Network, ReadMe file
+    - Segmentation, Feed Forward Neural Network, and ReadMe file
 
 
