@@ -5,6 +5,20 @@
 
 As part of the Data Science Certificate program at the University of Toronto our machine learning capstone project involved applying our theoretical and technical skillset to a real world scenario. The dataset we chose was a Retail Sales dataset that can be used to predict the product category a customer is likely to purchase based on factors such as their age, gender/sex, and previous purchase history. This project aims to apply exploratory data analysis, advanced analytics, and machine learning techniques to gain actionable insights that can help businesses optimize product inventory, and enhance customer engagement. 
 
+# Requirements
+This project uses the following Python libraries and tools.
+
+* numpy : For faster numerical operations.
+* pandas : For analysing and getting insights from datasets.
+* matplotlib : For creating graphs and plots.
+* seaborn : For enhancing the style of matplotlib plots.
+* sklearn : For machine learning.
+* xgboost : For gradient boosting algorithm.
+* tensorflow :For deep learning model.
+* shap : For interpreting and explaining output of xgboost model.
+
+* SQLite and sql : For data processing.
+
 # Dataset:
 
 Our retail sales dataset from Kaggle ([Retail Sales Dataset](https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset)) consists of attributes that drive retail operations and customer interactions that can be oberved in the real world. The dataset consists of essential attributes such as Transaction ID, Date, Customer ID, Gender, Age, Product Category, Quantity, Price per Unit, and Total Amount. These attributes allow for an in-depth exploration of sales trends, product preferences, and puchasing behaviour. The analysis and insights gained from this project can be used to personalize products to each customer in the future. Based on our insights, this project demonstrates our team work and potential to contribute to the data science or machine learning field.
@@ -178,6 +192,47 @@ Product categories are too broad (e.g., "Electronics"), preventing a detailed an
 
 - **Product_Category**
 
+# Segmentation
+- **K-means** clustering was used to find any customer spending behaviour based on age and total amount spent and gender and total amount spent.
+
+### Total Amount vs Age
+
+Age and Total Amount were selected as the features. They were standardized using StandardScaler function, and the data was visualized.
+
+K-Means clustering was performed by using and **n_clusters** was set to 3 randomly.Visualization on the clustered data revealed three distinct clusters:
+
+![alt text](image-3.png)
+
+1. A younger group with relatively lower spending.
+2. An  older group with relatively lower spending.
+3. A diverse group across all age ranges with higher spending.
+
+The number of customers in the high-spending group is smaller compared to the low-spending groups.
+
+Then **Elbow method** was used to find the optimal number of clusters. The Elbow plot between **WSSD** and **k**confirmed that the inital random selection of n as 3 was the correct choice.
+
+![alt text](image-6.png)
+
+### Total Amount vs Gender
+
+A similar approach of K-means clustering was applied to total amount and age as well.
+
+Visualization on the clustered data based on gender revealed three distinct clusters:
+
+![alt text](image-4.png)
+
+There are also three distinct clusters based on gender:
+
+1. A female group with relatively lower spending.
+2. A male group with relatively lower spending.
+3. A mixed-gender group with higher spending.
+
+The Elbow method also found the optimal number of clusters to be 3.
+
+The high-spending group is smaller compared to the low-spending groups. Within the female group, there is a relatively higher proportion of medium to high spenders. These patterns closely align with the age-based clustering results, indicating that gender does not significantly improve the prediction of customer spending behavior.
+
+
+
 
 # Model Output
 
@@ -219,4 +274,12 @@ Product categories are too broad (e.g., "Electronics"), preventing a detailed an
 - Wide Price Range ($25 to $500): Prices for all categories vary significantly.
 
 **Insight:** Smart Pricing & Promotions: Offer flexible payment options for high-priced items and seasonal discounts to boost conversions.
+
+
+
+### **Segmentation (Total Amount vs Age, Gender)**
+- The high-spending group is smaller compared to the low-spending groups across age groups and genders. 
+
+**Insight:** Focus on increasing the average spend, perhaps through targeted product recommendations or incentives.
+
 
