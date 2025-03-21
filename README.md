@@ -193,7 +193,7 @@ Product categories are too broad (e.g., "Electronics"), preventing a detailed an
 - **Product_Category**
 
 # Segmentation
-- **K-means** clustering was used to find any customer spending behaviour based on age and total amount spent and gender and total amount spent.
+- **K-means** clustering was used to find out whether we can group customers based on their spending behaviour as influenced by age and group.
 
 ### Total Amount vs Age
 
