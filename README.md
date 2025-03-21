@@ -64,7 +64,6 @@ To explore the retail sales dataset, we will focus on the following objectives:
         Models include:
         - **XGBoost Model:** a decision tree classifier
         - **Feed Forward Neural Network:** deep learning model
-        - **Recommendation System:** another deep learning model
 6. **Business Insights:** 
     - Summary findings of the data analysis, models, and results will help the retail store owner manage product inventory by knowing what products customers are buying and thus, will help increase customer satisfaction.
 
@@ -233,7 +232,6 @@ The high-spending group is smaller compared to the low-spending groups. Within t
 
 
 
-
 # Model Output
 
 **XGBoost**
@@ -247,8 +245,6 @@ The high-spending group is smaller compared to the low-spending groups. Within t
 - Batch size: 32
 - Test Accuracy: 39.50%
 - Test Loss: 1.39
-
-
 
 
 
@@ -281,5 +277,21 @@ The high-spending group is smaller compared to the low-spending groups. Within t
 - The high-spending group is smaller compared to the low-spending groups across age groups and genders. 
 
 **Insight:** Focus on increasing the average spend, perhaps through targeted product recommendations or incentives.
+
+# Changes to Original Plan
+- One change we made, due to the lack of time, was to scrap the recommendation system model from our project plan. We decided that the XGBoost and Feed Forward Neural Network models were sufficient, but the lack of features and records in our data was the biggest disadvantage we faced, so building more models most likely wouldn't have improved performance drastically
+
+# Credits
+
+- Abrahim Senra Abrahao
+    - Exploratory Data Analysis
+- Amit Kumar Sindhwani
+    - Exploratory Data Analysis, Feed Forward Neural Network, and ReadMe file
+- Lisa Thurairasu
+    - XGBoost model and ReadMe file
+- Nipun Puri
+    - Data preparation, XGBoost results, and ReadMe file
+- Sreesha Pannikode Puthanveedu
+    - Segmentation, Feed Forward Neural Network, ReadMe file
 
 
