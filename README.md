@@ -193,7 +193,7 @@ Product categories are too broad (e.g., "Electronics"), preventing a detailed an
 - **Product_Category**
 
 # Segmentation
-- **K-means** clustering was used to find any customer spending behaviour based on age and total amount spent and gender and total amount spent.
+- **K-means** clustering was used to find out whether we can group customers based on their spending behaviour as influenced by age and group.
 
 ### Total Amount vs Age
 
@@ -201,7 +201,7 @@ Age and Total Amount were selected as the features. They were standardized using
 
 K-Means clustering was performed by using and **n_clusters** was set to 3 randomly.Visualization on the clustered data revealed three distinct clusters:
 
-![alt text](image-3.png)
+![alt text](images/clust_image_1.png)
 
 1. A younger group with relatively lower spending.
 2. An  older group with relatively lower spending.
@@ -211,7 +211,7 @@ The number of customers in the high-spending group is smaller compared to the lo
 
 Then **Elbow method** was used to find the optimal number of clusters. The Elbow plot between **WSSD** and **k**confirmed that the inital random selection of n as 3 was the correct choice.
 
-![alt text](image-6.png)
+![alt text](images/clust_image_2.png)
 
 ### Total Amount vs Gender
 
@@ -219,7 +219,7 @@ A similar approach of K-means clustering was applied to total amount and age as 
 
 Visualization on the clustered data based on gender revealed three distinct clusters:
 
-![alt text](image-4.png)
+![alt text](images/clust_image_3.png)
 
 There are also three distinct clusters based on gender:
 
