@@ -133,14 +133,22 @@ Our retail sales dataset consists of following attributes:
 - Creating loyalty programs or personalized promotions for the 56-65 demographic, as they are the most active buyers.
 - Ensuring a seamless shopping experience to cater to this age group’s preferences
 
-# Limitations with Data set
+# Identified Risks in the Dataset
 
-- The dataset consists of only 1,000 rows, making it insufficient for addressing complex retail challenges.
-- Each customer has only a single recorded transaction, preventing the identification of loyal customers.
-- There is no indication of whether transactions occurred in-store or online, which could aid in customer segmentation based on purchasing preferences and enable personalized offers to drive more sales
-- The dataset does not provide insights into customer purchase frequency.
-- It is not possible to analyze monthly or quarterly purchase patterns for specific customers.
-- The dataset includes only product categories without detailed product information. For example, within the electronics category, it is unclear whether customers are purchasing a TV or a monitor, or which TV brand is the most popular.
+**1. Limited Data Volume (High Risk)**
+The dataset has only 1,000 rows, which may lead to low model accuracy and an inability to generalize insights for large-scale retail scenarios.
+
+**2. Lack of Customer Purchase History (High Risk)**
+Each customer has only one transaction, making it impossible to track customer loyalty or segment based on repeat purchases. This limits the ability to build customer retention strategies.
+
+**3. No Purchase Frequency Insights (High Risk)**
+Without timestamped transaction data, it is impossible to determine monthly/quarterly purchase trends, affecting demand forecasting and inventory planning.
+
+**4. Missing Transaction Channel (Medium Risk)**
+The dataset does not differentiate between in-store and online purchases, reducing the ability to perform channel-specific analysis and optimize marketing efforts.
+
+**5.Lack of Granular Product Details (Medium Risk)**
+Product categories are too broad (e.g., "Electronics"), preventing a detailed analysis of popular products, brands, or price preferences, limiting precise recommendations.
 
 
 # Feature engineering
@@ -169,8 +177,42 @@ Our retail sales dataset consists of following attributes:
 
 - **Product_Category**
 
+# Model Output
+
+**XGBoost**
+
+
+**Feed Forward Neural Network Model**
+
+**Hyperparameters**
+- Total layers: 4 with no of Hidden layer: 2
+- Epochs: 300
+- Batch size: 32
+- Test Accuracy: 39.50%
+- Test Loss: 1.39
+
+
+
+
 
 # Business Insights
 
-This will be the summary of findings at the conclusion of the team project based on the EDA and model results.
+###  **Gender-Based Purchasing Behavior**
+- Balanced Gender Participation: Purchases are almost evenly distributed between Female (51%) and Male (49%) customers. 
+**Insight:** the company should emphasize personalized recommendations based on customer preferences and past purchases rather than just gender demographics.
+
+### **Age-Based Insights**
+- Mean Customer Age is 41 years
+
+**Insight:** Target the strategies to middle-aged customers, who form the core customer base.
+
+### **Purchase Behavior (Quantity per Transaction)**
+- Most Customers Buy in Small Quantities - The average purchase quantity is 2.5 (≈3 items) per transaction.
+
+**Insight:** Introduce “Buy More, Save More” promotions to incentivize higher spending per transaction. Create bundle offers (e.g., "Buy 2, Get 1 Free") to encourage customers to buy more
+
+### **Pricing Strategy**
+- Wide Price Range ($25 to $500): Prices for all categories vary significantly.
+
+**Insight:** Smart Pricing & Promotions: Offer flexible payment options for high-priced items and seasonal discounts to boost conversions.
 
