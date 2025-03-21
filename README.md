@@ -151,6 +151,7 @@ The dataset does not differentiate between in-store and online purchases, reduci
 Product categories are too broad (e.g., "Electronics"), preventing a detailed analysis of popular products, brands, or price preferences, limiting precise recommendations.
 
 
+
 # Feature engineering
 - We begin with a transaction dataset where each record represents a customer's transaction. Customer-level features are engineered for model training, as defined in feature_eng.sql
 
@@ -177,6 +178,7 @@ Product categories are too broad (e.g., "Electronics"), preventing a detailed an
 
 - **Product_Category**
 
+
 # Model Output
 
 **XGBoost**
@@ -195,7 +197,9 @@ Product categories are too broad (e.g., "Electronics"), preventing a detailed an
 
 
 
+
 # Business Insights
+
 
 ###  **Gender-Based Purchasing Behavior**
 - Balanced Gender Participation: Purchases are almost evenly distributed between Female (51%) and Male (49%) customers. 
