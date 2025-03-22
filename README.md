@@ -139,6 +139,9 @@ Our retail sales dataset consists of following attributes:
 ![alt text](images/eda_sales.png)
 
 ## Plotted the total sales based on Age groups
+
+![alt text](images/EDa-age.png)
+
 - The plot indicates that the majority of customers fall within the 36-65 age range.
 - The 56-65 age group has the highest number of purchases, followed closely by the 36-45 and 46-55 age groups, with only a slight variation in sales among them.
 
