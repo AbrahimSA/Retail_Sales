@@ -247,7 +247,7 @@ The model consists of a dense layer, a batch normalization layer, followed by  h
 The model is trained with over a maximum of 300 epochs with a batch size of 32.
 
 **Hyperparameters**
-- Total dense layers: 4 with no of Hidden layer: 2
+- Total dense layers: 4 with 2 hidden layers
 - Epochs: 300
 - Batch size: 32
 - Test Accuracy: 39.50%
