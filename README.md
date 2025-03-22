@@ -240,14 +240,14 @@ The high-spending group is smaller compared to the low-spending groups. Within t
 
 **Feed Forward Neural Network Model**
 
-A feed forward neural network model was developed for predicting the product category(0, 1, 2) of next purchase.
+A feed forward neural network model was developed for predicting the product category(0 - Beauty, 1 -  Clothing, 2 - Electronics) of next purchase.
 
 The model consists of a dense layer, a batch normalization layer, followed by  hidden  layers consisting of more dense layers, batch normalization  and dropouts. A  final softmax activation layer was used as output layer for the multi-class classification.
 
 The model is trained with over a maximum of 300 epochs with a batch size of 32.
 
 **Hyperparameters**
-- Total layers: 4 with no of Hidden layer: 2
+- Total dense layers: 4 with no of Hidden layer: 2
 - Epochs: 300
 - Batch size: 32
 - Test Accuracy: 39.50%
