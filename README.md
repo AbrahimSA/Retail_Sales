@@ -5,6 +5,22 @@
 
 As part of the Data Science Certificate program at the University of Toronto our machine learning capstone project involved applying our theoretical and technical skillset to a real world scenario. The dataset we chose was a Retail Sales dataset that can be used to predict the product category a customer is likely to purchase based on factors such as their age, gender/sex, and previous purchase history. This project aims to apply exploratory data analysis, advanced analytics, and machine learning techniques to gain actionable insights that can help businesses optimize product inventory, and enhance customer engagement. 
 
+# Business Case:
+
+Retail businesses often struggle to identify which products are most likely to be purchased by specific customer segments. This results in:
+
+- **Inefficient marketing strategies** Generic promotions instead of personalized recommendations.
+- **Suboptimal inventory management** Stocking products without understanding demand from different customer groups.
+- **Missed revenue opportunities** Lack of tailored cross-sell and up-sell strategies.
+
+This project focuses on the following objectives:
+- Predict the likelihood of a customer purchasing specific product categories based on their age, gender/sex, previous purchase history
+- Enable personalized recommendation of the next product category
+
+# Dataset:
+
+Our retail sales dataset from Kaggle ([Retail Sales Dataset](https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset)) consists of attributes that drive retail operations and customer interactions that can be oberved in the real world. The dataset consists of essential attributes such as Transaction ID, Date, Customer ID, Gender, Age, Product Category, Quantity, Price per Unit, and Total Amount. These attributes allow for an in-depth exploration of sales trends, product preferences, and puchasing behaviour. The analysis and insights gained from this project can be used to personalize products to each customer in the future. Based on our insights, this project demonstrates our team work and potential to contribute to the data science or machine learning field.
+
 # Tool and Libraries
 This project uses the following Python libraries and tools.
 
@@ -19,10 +35,6 @@ This project uses the following Python libraries and tools.
 
 * SQLite and sql : For data processing.
 
-# Dataset:
-
-Our retail sales dataset from Kaggle ([Retail Sales Dataset](https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset)) consists of attributes that drive retail operations and customer interactions that can be oberved in the real world. The dataset consists of essential attributes such as Transaction ID, Date, Customer ID, Gender, Age, Product Category, Quantity, Price per Unit, and Total Amount. These attributes allow for an in-depth exploration of sales trends, product preferences, and puchasing behaviour. The analysis and insights gained from this project can be used to personalize products to each customer in the future. Based on our insights, this project demonstrates our team work and potential to contribute to the data science or machine learning field.
-
 # Members
 
 | Name                     | LinkedIn Profile | GitHub Profile |
@@ -33,19 +45,6 @@ Our retail sales dataset from Kaggle ([Retail Sales Dataset](https://www.kaggle.
 | Lisa Thurairasu        | [LinkedIn](https://www.linkedin.com/in/lisathurairasu/) | [GitHub](https://github.com/lthurair) |
 | Nipun Puri            | [LinkedIn](https://www.linkedin.com/in/nipunpuri/) | [GitHub](https://github.com/nipunpuri) |
 | Sreesha Pannikode Puthanveedu | [LinkedIn](https://www.linkedin.com/in/sreesha-pannikode-puthanveedu-22216498) | [GitHub](https://github.com/Sreeshap01) |
-
-
-# Business Case:
-
-Retail businesses often struggle to identify which products are most likely to be purchased by specific customer segments. This results in:
-
-- **Inefficient marketing strategies** Generic promotions instead of personalized recommendations.
-- **Suboptimal inventory management** Stocking products without understanding demand from different customer groups.
-- **Missed revenue opportunities** Lack of tailored cross-sell and up-sell strategies.
-
-This project focuses on the following objectives:
-- Predict the likelihood of a customer purchasing specific product categories based on their age, gender/sex, previous purchase history
-- Enable personalized recommendation of the next product category
 
 # Project Plan:
 
