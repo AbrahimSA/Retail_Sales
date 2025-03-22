@@ -5,7 +5,7 @@
 
 As part of the Data Science Certificate program at the University of Toronto our machine learning capstone project involved applying our theoretical and technical skillset to a real world scenario. The dataset we chose was a Retail Sales dataset that can be used to predict the product category a customer is likely to purchase based on factors such as their age, gender/sex, and previous purchase history. This project aims to apply exploratory data analysis, advanced analytics, and machine learning techniques to gain actionable insights that can help businesses optimize product inventory, and enhance customer engagement. 
 
-# Requirements
+# Tool and Libraries
 This project uses the following Python libraries and tools.
 
 * numpy : For faster numerical operations.
@@ -237,6 +237,17 @@ The high-spending group is smaller compared to the low-spending groups. Within t
 
 **XGBoost**
 
+Accuracy: 0.34
+
+| Metric       | Precision | Recall | F1-Score | Support |
+|--------------|-----------|--------|----------|---------|
+| Beauty       | 0.17      | 0.05   | 0.08     | 60      |
+| Clothing     | 0.32      | 0.44   | 0.37     | 66      |
+| Electronics  | 0.41      | 0.50   | 0.45     | 74      |
+| Accuracy     |           |        | 0.34     | 200     |
+| Macro avg    | 0.30      | 0.33   | 0.30     | 200     |
+| Weighted avg | 0.31      | 0.34   | 0.31     | 200     |
+
 
 **Feed Forward Neural Network Model**
 
@@ -252,6 +263,8 @@ The model is trained with over a maximum of 300 epochs with a batch size of 32.
 - Batch size: 32
 - Test Accuracy: 39.50%
 - Test Loss: 1.39
+
+**Accuracy: 0.34**
 
 
 ![alt text](images/FFNN_1.png)
