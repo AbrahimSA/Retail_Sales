@@ -136,6 +136,8 @@ Our retail sales dataset consists of following attributes:
 **This insight suggests that businesses should prioritize**
 - stocking popular products in the high-performing Electronics category, followed by Clothing, to maximize sales opportunities.
 
+![alt text](images/eda_sales.png)
+
 ## Plotted the total sales based on Age groups
 - The plot indicates that the majority of customers fall within the 36-65 age range.
 - The 56-65 age group has the highest number of purchases, followed closely by the 36-45 and 46-55 age groups, with only a slight variation in sales among them.
