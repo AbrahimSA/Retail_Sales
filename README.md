@@ -39,7 +39,7 @@ This project uses the following Python libraries and tools.
 
 | Name                     | LinkedIn Profile | GitHub Profile | Reflection Video
 |--------------------------|-----------------|---------------|---------------|
-| Abrahim Senra Abrahao   | [LinkedIn](https://www.linkedin.com/in/abrahimsa) | [GitHub](https://github.com/AbrahimSA) |
+| Abrahim Senra Abrahao   | [LinkedIn](https://www.linkedin.com/in/abrahimsa) | [GitHub](https://github.com/AbrahimSA) |  [Video](https://drive.google.com/file/d/1aPu2gDOB1OITqLjc6RFpgZvJ7LPwyLe8/view?usp=drive_link)
 | Amit Kumar Sindhwani    | [LinkedIn](https://www.linkedin.com/in/amit-sindhwani/) | [GitHub](https://github.com/amitsindhwani) | [Video](https://drive.google.com/file/d/1V-eSnhc8smSvJQ5n6Zx_RuDJVOV_KV7w/view)
 | Hamid Moaf             | [LinkedIn](#) | [GitHub](https://github.com/hamimoaf) |
 | Lisa Thurairasu        | [LinkedIn](https://www.linkedin.com/in/lisathurairasu/) | [GitHub](https://github.com/lthurair) | [Video](https://drive.google.com/file/d/1nxRxSpO4R7Ysr5x95BWOmwQVvql2Jf0f/view?usp=drive_open)
@@ -314,7 +314,7 @@ The model is trained with over a maximum of 300 epochs with a batch size of 32.
 # Credits
 
 - Abrahim Senra Abrahao
-    - Exploratory Data Analysis
+    - Exploratory Data Analysis and Linear Regression
 - Amit Kumar Sindhwani
     - Exploratory Data Analysis, Feed Forward Neural Network, and ReadMe file
 - Lisa Thurairasu
