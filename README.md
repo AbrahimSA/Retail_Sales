@@ -3,7 +3,7 @@
 
 # Project Overview:
 
-As part of the Data Science Certificate program at the University of Toronto our machine learning capstone project involved applying our theoretical and technical skillset to a real world scenario. The dataset we chose was a Retail Sales dataset that can be used to predict the product category a customer is likely to purchase based on factors such as their age, gender/sex, and previous purchase history. This project aims to apply exploratory data analysis, advanced analytics, and machine learning techniques to gain actionable insights that can help businesses optimize product inventory, and enhance customer engagement. 
+As part of the Machine Learning Certificate program at the University of Toronto our machine learning capstone project involved applying our theoretical and technical skillset to a real world scenario. The dataset we chose was a Retail Sales dataset that can be used to predict the product category a customer is likely to purchase based on factors such as their age, gender/sex, and previous purchase history. This project aims to apply exploratory data analysis, advanced analytics, and machine learning techniques to gain actionable insights that can help businesses optimize product inventory, and enhance customer engagement. 
 
 # Business Case:
 
@@ -56,7 +56,7 @@ To explore the retail sales dataset, we will focus on the following objectives:
 3. **Feature Engineering:** 
     - Create and derive new features, perform one-hot encoding or create dummy variables
 4. **Customer Segmentation:** 
-    - Apply clustering algorithms (i.e., K-Means or KNN) to identify customer groups based on purchasing behaviour
+    - Apply clustering algorithms (i.e., K-Means) to identify customer groups based on purchasing behaviour
 5. **Model development and Evaluation:** 
     - Build several models to predict what product category a customer will purchase and determine the best-fitting model based on evaluation metrics.
     
@@ -196,7 +196,7 @@ Product categories are too broad (e.g., "Electronics"), preventing a detailed an
 - **Product_Category**
 
 # Segmentation
-- **K-means** clustering was used to find out whether we can group customers based on their spending behaviour as influenced by age and group.
+- **K-means** clustering was used to find out whether we can group customers based on their spending behaviour as influenced by age and gender.
 
 ### Total Amount vs Age
 
@@ -212,14 +212,14 @@ K-Means clustering was performed by using and **n_clusters** was set to 3 random
 
 The number of customers in the high-spending group is smaller compared to the low-spending groups.
 
-Then **Elbow method** was used to find the optimal number of clusters. The Elbow plot between **WSSD** and **k**confirmed that the inital random selection of n as 3 was the correct choice.
+Then **Elbow method** was used to find the optimal number of clusters. The Elbow plot between **WSSD** and **k** confirmed that the inital random selection of n as 3 was the correct choice.
 
 ![alt text](images/clust_image_2.png)
 
 
 ### Total Amount vs Gender
 
-A similar approach of K-means clustering was applied to total amount and age as well.
+A similar approach of K-means clustering was applied to total amount and gender as well.
 
 Visualization on the clustered data based on gender revealed three distinct clusters:
 
