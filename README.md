@@ -3,37 +3,7 @@
 
 # Project Overview:
 
-As part of the Data Science Certificate program at the University of Toronto our machine learning capstone project involved applying our theoretical and technical skillset to a real world scenario. The dataset we chose was a Retail Sales dataset that can be used to predict the product category a customer is likely to purchase based on factors such as their age, gender/sex, and previous purchase history. This project aims to apply exploratory data analysis, advanced analytics, and machine learning techniques to gain actionable insights that can help businesses optimize product inventory, and enhance customer engagement. 
-
-# Requirements
-This project uses the following Python libraries and tools.
-
-* numpy : For faster numerical operations.
-* pandas : For analysing and getting insights from datasets.
-* matplotlib : For creating graphs and plots.
-* seaborn : For enhancing the style of matplotlib plots.
-* sklearn : For machine learning.
-* xgboost : For gradient boosting algorithm.
-* tensorflow :For deep learning model.
-* shap : For interpreting and explaining output of xgboost model.
-
-* SQLite and sql : For data processing.
-
-# Dataset:
-
-Our retail sales dataset from Kaggle ([Retail Sales Dataset](https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset)) consists of attributes that drive retail operations and customer interactions that can be oberved in the real world. The dataset consists of essential attributes such as Transaction ID, Date, Customer ID, Gender, Age, Product Category, Quantity, Price per Unit, and Total Amount. These attributes allow for an in-depth exploration of sales trends, product preferences, and puchasing behaviour. The analysis and insights gained from this project can be used to personalize products to each customer in the future. Based on our insights, this project demonstrates our team work and potential to contribute to the data science or machine learning field.
-
-# Members
-
-| Name                     | LinkedIn Profile | GitHub Profile |
-|--------------------------|-----------------|---------------|
-| Abrahim Senra Abrahao   | [LinkedIn](https://www.linkedin.com/in/abrahimsa) | [GitHub](https://github.com/AbrahimSA) |
-| Amit Kumar Sindhwani    | [LinkedIn](https://www.linkedin.com/in/amit-sindhwani/) | [GitHub](https://github.com/amitsindhwani) |
-| Hamid Moaf             | [LinkedIn](#) | [GitHub](https://github.com/hamimoaf) |
-| Lisa Thurairasu        | [LinkedIn](https://www.linkedin.com/in/lisathurairasu/) | [GitHub](https://github.com/lthurair) |
-| Nipun Puri            | [LinkedIn](https://www.linkedin.com/in/nipunpuri/) | [GitHub](https://github.com/nipunpuri) |
-| Sreesha Pannikode Puthanveedu | [LinkedIn](https://www.linkedin.com/in/sreesha-pannikode-puthanveedu-22216498) | [GitHub](https://github.com/Sreeshap01) |
-
+As part of the Machine Learning Certificate program at the University of Toronto our machine learning capstone project involved applying our theoretical and technical skillset to a real world scenario. The dataset we chose was a Retail Sales dataset that can be used to predict the product category a customer is likely to purchase based on factors such as their age, gender/sex, and previous purchase history. This project aims to apply exploratory data analysis, advanced analytics, and machine learning techniques to gain actionable insights that can help businesses optimize product inventory, and enhance customer engagement. 
 
 # Business Case:
 
@@ -47,6 +17,35 @@ This project focuses on the following objectives:
 - Predict the likelihood of a customer purchasing specific product categories based on their age, gender/sex, previous purchase history
 - Enable personalized recommendation of the next product category
 
+# Dataset:
+
+Our retail sales dataset from Kaggle ([Retail Sales Dataset](https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset)) consists of attributes that drive retail operations and customer interactions that can be oberved in the real world. The dataset consists of essential attributes such as Transaction ID, Date, Customer ID, Gender, Age, Product Category, Quantity, Price per Unit, and Total Amount. These attributes allow for an in-depth exploration of sales trends, product preferences, and puchasing behaviour. The analysis and insights gained from this project can be used to personalize products to each customer in the future. Based on our insights, this project demonstrates our team work and potential to contribute to the data science or machine learning field.
+
+# Tool and Libraries
+This project uses the following Python libraries and tools.
+
+* numpy : For faster numerical operations.
+* pandas : For analysing and getting insights from datasets.
+* matplotlib : For creating graphs and plots.
+* seaborn : For enhancing the style of matplotlib plots.
+* sklearn : For machine learning.
+* xgboost : For gradient boosting algorithm.
+* tensorflow :For deep learning model.
+* shap : For interpreting and explaining output of xgboost model.
+
+* SQLite and sql : For data processing.
+
+# Members
+
+| Name                     | LinkedIn Profile | GitHub Profile | Reflection Video
+|--------------------------|-----------------|---------------|---------------|
+| Abrahim Senra Abrahao   | [LinkedIn](https://www.linkedin.com/in/abrahimsa) | [GitHub](https://github.com/AbrahimSA) |  [Video](https://drive.google.com/file/d/1aPu2gDOB1OITqLjc6RFpgZvJ7LPwyLe8/view?usp=drive_link)
+| Amit Kumar Sindhwani    | [LinkedIn](https://www.linkedin.com/in/amit-sindhwani/) | [GitHub](https://github.com/amitsindhwani) | [Video](https://drive.google.com/file/d/1V-eSnhc8smSvJQ5n6Zx_RuDJVOV_KV7w/view)
+| Hamid Moaf             | [LinkedIn](#) | [GitHub](https://github.com/hamimoaf) |
+| Lisa Thurairasu        | [LinkedIn](https://www.linkedin.com/in/lisathurairasu/) | [GitHub](https://github.com/lthurair) | [Video](https://drive.google.com/file/d/1nxRxSpO4R7Ysr5x95BWOmwQVvql2Jf0f/view?usp=drive_open)
+| Nipun Puri            | [LinkedIn](https://www.linkedin.com/in/nipunpuri/) | [GitHub](https://github.com/nipunpuri) |
+| Sreesha Pannikode Puthanveedu | [LinkedIn](https://www.linkedin.com/in/sreesha-pannikode-puthanveedu-22216498) | [GitHub](https://github.com/Sreeshap01) |
+
 # Project Plan:
 
 To explore the retail sales dataset, we will focus on the following objectives:
@@ -57,14 +56,13 @@ To explore the retail sales dataset, we will focus on the following objectives:
 3. **Feature Engineering:** 
     - Create and derive new features, perform one-hot encoding or create dummy variables
 4. **Customer Segmentation:** 
-    - Apply clustering algorithms (i.e., K-Means or KNN) to identify customer groups based on purchasing behaviour
+    - Apply clustering algorithms (i.e., K-Means) to identify customer groups based on purchasing behaviour
 5. **Model development and Evaluation:** 
     - Build several models to predict what product category a customer will purchase and determine the best-fitting model based on evaluation metrics.
     
         Models include:
         - **XGBoost Model:** a decision tree classifier
         - **Feed Forward Neural Network:** deep learning model
-        - **Recommendation System:** another deep learning model
 6. **Business Insights:** 
     - Summary findings of the data analysis, models, and results will help the retail store owner manage product inventory by knowing what products customers are buying and thus, will help increase customer satisfaction.
 
@@ -138,7 +136,12 @@ Our retail sales dataset consists of following attributes:
 **This insight suggests that businesses should prioritize**
 - stocking popular products in the high-performing Electronics category, followed by Clothing, to maximize sales opportunities.
 
+![alt text](images/eda_sales.png)
+
 ## Plotted the total sales based on Age groups
+
+![alt text](images/EDa-age.png)
+
 - The plot indicates that the majority of customers fall within the 36-65 age range.
 - The 56-65 age group has the highest number of purchases, followed closely by the 36-45 and 46-55 age groups, with only a slight variation in sales among them.
 
@@ -193,7 +196,7 @@ Product categories are too broad (e.g., "Electronics"), preventing a detailed an
 - **Product_Category**
 
 # Segmentation
-- **K-means** clustering was used to find out whether we can group customers based on their spending behaviour as influenced by age and group.
+- **K-means** clustering was used to find out whether we can group customers based on their spending behaviour as influenced by age and gender.
 
 ### Total Amount vs Age
 
@@ -209,14 +212,14 @@ K-Means clustering was performed by using and **n_clusters** was set to 3 random
 
 The number of customers in the high-spending group is smaller compared to the low-spending groups.
 
-Then **Elbow method** was used to find the optimal number of clusters. The Elbow plot between **WSSD** and **k**confirmed that the inital random selection of n as 3 was the correct choice.
+Then **Elbow method** was used to find the optimal number of clusters. The Elbow plot between **WSSD** and **k** confirmed that the inital random selection of n as 3 was the correct choice.
 
 ![alt text](images/clust_image_2.png)
 
 
 ### Total Amount vs Gender
 
-A similar approach of K-means clustering was applied to total amount and age as well.
+A similar approach of K-means clustering was applied to total amount and gender as well.
 
 Visualization on the clustered data based on gender revealed three distinct clusters:
 
@@ -234,10 +237,20 @@ The high-spending group is smaller compared to the low-spending groups. Within t
 
 
 
-
 # Model Output
 
 **XGBoost**
+
+Accuracy: 0.34
+
+| Metric       | Precision | Recall | F1-Score | Support |
+|--------------|-----------|--------|----------|---------|
+| Beauty       | 0.17      | 0.05   | 0.08     | 60      |
+| Clothing     | 0.32      | 0.44   | 0.37     | 66      |
+| Electronics  | 0.41      | 0.50   | 0.45     | 74      |
+| Accuracy     |           |        | 0.34     | 200     |
+| Macro avg    | 0.30      | 0.33   | 0.30     | 200     |
+| Weighted avg | 0.31      | 0.34   | 0.31     | 200     |
 
 
 **Feed Forward Neural Network Model**
@@ -255,14 +268,14 @@ The model is trained with over a maximum of 300 epochs with a batch size of 32.
 - Test Accuracy: 39.50%
 - Test Loss: 1.39
 
+**Accuracy: 0.34**
+
 
 ![alt text](images/FFNN_1.png)
 
 **Ploting Training accuracy Vs validation accuracy**
 
 ![alt text](images/FFNN_2.png)
-
-
 
 
 
@@ -294,5 +307,21 @@ The model is trained with over a maximum of 300 epochs with a batch size of 32.
 - The high-spending group is smaller compared to the low-spending groups across age groups and genders. 
 
 **Insight:** Focus on increasing the average spend, perhaps through targeted product recommendations or incentives.
+
+# Changes to Original Plan
+- One change we made, due to the lack of time, was to scrap the recommendation system model from our project plan. We decided that the XGBoost and Feed Forward Neural Network models were sufficient, but the lack of features and records in our data was the biggest disadvantage we faced, so building more models most likely wouldn't have improved performance drastically
+
+# Credits
+
+- Abrahim Senra Abrahao
+    - Exploratory Data Analysis and Linear Regression
+- Amit Kumar Sindhwani
+    - Exploratory Data Analysis, Feed Forward Neural Network, and ReadMe file
+- Lisa Thurairasu
+    - XGBoost model and ReadMe file
+- Nipun Puri
+    - Data preparation, XGBoost results, and ReadMe file
+- Sreesha Pannikode Puthanveedu
+    - Segmentation, Feed Forward Neural Network, and ReadMe file
 
 
