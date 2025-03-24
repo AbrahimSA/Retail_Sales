@@ -37,12 +37,12 @@ This project uses the following Python libraries and tools.
 
 # Members
 
-| Name                     | LinkedIn Profile | GitHub Profile |
-|--------------------------|-----------------|---------------|
+| Name                     | LinkedIn Profile | GitHub Profile | Reflection Video
+|--------------------------|-----------------|---------------|---------------|
 | Abrahim Senra Abrahao   | [LinkedIn](https://www.linkedin.com/in/abrahimsa) | [GitHub](https://github.com/AbrahimSA) |
-| Amit Kumar Sindhwani    | [LinkedIn](https://www.linkedin.com/in/amit-sindhwani/) | [GitHub](https://github.com/amitsindhwani) |
+| Amit Kumar Sindhwani    | [LinkedIn](https://www.linkedin.com/in/amit-sindhwani/) | [GitHub](https://github.com/amitsindhwani) | [Video](https://drive.google.com/file/d/1V-eSnhc8smSvJQ5n6Zx_RuDJVOV_KV7w/view)
 | Hamid Moaf             | [LinkedIn](#) | [GitHub](https://github.com/hamimoaf) |
-| Lisa Thurairasu        | [LinkedIn](https://www.linkedin.com/in/lisathurairasu/) | [GitHub](https://github.com/lthurair) |
+| Lisa Thurairasu        | [LinkedIn](https://www.linkedin.com/in/lisathurairasu/) | [GitHub](https://github.com/lthurair) | [Video](https://drive.google.com/file/d/1nxRxSpO4R7Ysr5x95BWOmwQVvql2Jf0f/view?usp=drive_open)
 | Nipun Puri            | [LinkedIn](https://www.linkedin.com/in/nipunpuri/) | [GitHub](https://github.com/nipunpuri) |
 | Sreesha Pannikode Puthanveedu | [LinkedIn](https://www.linkedin.com/in/sreesha-pannikode-puthanveedu-22216498) | [GitHub](https://github.com/Sreeshap01) |
 
