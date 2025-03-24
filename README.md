@@ -44,7 +44,7 @@ This project uses the following Python libraries and tools.
 | Hamid Moaf             | [LinkedIn](#) | [GitHub](https://github.com/hamimoaf) |
 | Lisa Thurairasu        | [LinkedIn](https://www.linkedin.com/in/lisathurairasu/) | [GitHub](https://github.com/lthurair) | [Video](https://drive.google.com/file/d/1nxRxSpO4R7Ysr5x95BWOmwQVvql2Jf0f/view?usp=drive_open)
 | Nipun Puri            | [LinkedIn](https://www.linkedin.com/in/nipunpuri/) | [GitHub](https://github.com/nipunpuri) |
-| Sreesha Pannikode Puthanveedu | [LinkedIn](https://www.linkedin.com/in/sreesha-pannikode-puthanveedu-22216498) | [GitHub](https://github.com/Sreeshap01) |
+| Sreesha Pannikode Puthanveedu | [LinkedIn](https://www.linkedin.com/in/sreesha-pannikode-puthanveedu-22216498) | [GitHub](https://github.com/Sreeshap01) | [Video](https://www.youtube.com/watch?v=Ybc-C8sG8Ac&t=23s)
 
 # Project Plan:
 
